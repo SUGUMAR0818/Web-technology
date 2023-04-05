@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Input Example</title>
+  </head>
+  <body>
+    <h1>Enter a Number:</h1>
+    <input type="text" id="userInput">
+    <br><br>
+    <button onclick="performAction()">Submit</button>
+
+    <script>
+      function performAction() {
+        // Get user input
+        const userInput = document.getElementById("userInput").value;
+
+        // Perform action based on user input
+        if (userInput % 2 === 0) {
+          alert("The number is even!");
+        } else {
+          alert("The number is odd!");
+        }
+      }
+    </script>
+  </body>
+</html>
